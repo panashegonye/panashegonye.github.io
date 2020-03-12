@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background:rgb(224, 188, 110) ;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header{
+  background: #560558;  
+  height: 66px;
+  width: 100%;
+}
+
+header .logo{
+    float: center;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text{
+   margin: 10px; 
+   font-family: 'arial black';
+} 
+
+header .logo-text span{
+    color: #ada6a6;
+}
+
+/*Page Wrapper*/
+.page-wrapper{
+    padding-top:70px;
+    align-self:center;
+    padding-bottom: 50px;
+    width: 600px;
+}
+
+table{
+    border:7px solid peru;
+    margin-top: -50px;
+    width:800px;
+	overflow:hidden;
+	border-style: none;
+	border-collapse: collapse;
+	box-shadow: 0 0 50px rgb(26, 10, 65);
+	color:crimson;
+}
+    
+
+table #one{
+    background-color: rgb(50, 114, 12);
+    height: 132px;
+}
+#two{
+    background-color:blue;
+}
+#three{
+    background-color:yellow;
+}
+#four{
+    background-color:plum;
+}
+#five{
+    background-color:rgb(39, 4, 24);
+}
+
+.page-wrapper .details{
+    height: 30px;
+    width: 100%;
+    text-align: left;
+}
+.page-wrapper .section1{
+    display: flex;
+    height: 250px;
+    margin-top: -20px;
+}
+.page-wrapper .section1 .pro{
+    flex: 1;
+    padding: 25px;
+    margin-top: -30px;
+}
+
+.page-wrapper .section2{
+    display: flex;
+    height: 250px;
+    margin-top: -20px;
+    
+
+}
+.page-wrapper .section2 .core{
+    flex: 1;
+    padding: 25px;
+    margin-top: -30px;
+}
+.page-wrapper .section2 .lang{
+    margin-left: -450px;
+}
+
+.page-wrapper .section3{
+    display: flex;
+    height: 250px;
+    margin-top: -20px;
+    
+
+}
+.page-wrapper .section3 .part{
+    flex: 1;
+    padding: 25px;
+    margin-top: -5px;
+}
+
