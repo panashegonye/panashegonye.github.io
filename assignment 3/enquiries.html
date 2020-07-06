@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>YOUTH SPARK Enquiries</title>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+      
+
+        <div class="logo">
+            <h1 class="logo-text"><span>YOUTH SPARK</span></h1>
+        </div>
+
+        <ul class="nav">
+            <li><a href="index.html" >Home</a></li>
+            <li class="active"><a href="enquiries.html">Enquiries</a></li>
+        </ul>
+    </header>
+    <!--//Header-->
+
+    
+
+        <div class="main-block">
+            <div class="heading-block">
+                <h2>Enquire Below...</h2>
+            </div>
+        </div>
+
+        
+          
+        <div class="main-block2">
+            <div class="container">
+            <div id="error_message"></div>
+            <form id="form" onsubmit="return validate();">
+            
+                <label for="fname">Name</label>
+            <div id="name1">
+              <input type="text" id="name" placeholder="Your name..">
+          
+            </div>
+              
+              <label for="lname">Number</label>
+              <input type="text" id="number" placeholder="Your phone number..">
+
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Your email..">
+          
+              <label for="message">Enquiry</label>
+              <textarea id="message" placeholder="Write something.." style="height:100px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+
+        
+    
+    </div>
+    
+    
+
+
+    <script>
+        function validate(){
+    var name = document.getElementById("name").value;
+    var number = document.getElementById("number").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    var error_message = document.getElementById("error_message");
+    var name1 = document.getElementById("name1");
+    
+    error_message.style.padding = "10px";
+    
+    var text;
+    var letters = /^[a-z]*$/i;
+
+    if (!name.match(letters)) {
+      text="Name cannot contain digits. Name is a text only Field";
+      error_message.innerHTML = text;
+      alert(text);
+      return false;
+  }
+
+    if(name.length < 2){
+        text="Enter more than 1 character for name";
+        error_message.innerHTML = text;
+        alert(text);
+        return false;
+
+    }
+
+    if(number.length < 10){
+      text = "Please Enter valid Phone Number";
+      error_message.innerHTML = text;
+      alert(text);
+      return false;
+    }
+    if(isNaN(number)){
+        text = "Phone Number should be digits only";
+        error_message.innerHTML = text;
+        alert(text);
+        return false;
+      }
+
+    if(email.indexOf("@") == -1 || email.length < 6){
+      text = "Please Enter valid Email";
+      error_message.innerHTML = text;
+      alert(text);
+      return false;
+    }
+    if(message.length <= 10){
+      text = "Please Enter More Than 10 Characters In Enquiry field";
+      error_message.innerHTML = text;
+      alert(text);
+      return false;
+    }
+
+
+    alert("Form Submitted Successfully!");
+    return true;
+    
+}
+    </script>
+</body>
+</html>

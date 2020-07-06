@@ -1,0 +1,15 @@
+
+h1{color: gold ;font-size: 2em}
+
+
+hr { color: pink; background-color: white; height: 3px;width:100%;text-align: left; }
+body{color:pink;background-color:blue} 
+hr,a{color: puple; background-color:white}
+table,tr {border="1";background-color:red;cellpadding="25px";width:100%;height:100%}
+tr,td{height:75;background-color: blue;
+tr{background-color: white}
+tr{background-color: red}
+p, li {font-family: "Verdana", "Arial", "Helvetica", sans-serif}
+.errorField { 
+background-color: red; 
+}
